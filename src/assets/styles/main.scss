@@ -1,3 +1,6 @@
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -28,3 +31,22 @@
 /**
  * Do NOT include anything else in this file!
  */
+ @import "tailwindcss/utilities.css";
+
+ @layer components {
+    .btn-primary {
+      @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+
+    .header-primary{
+        @apply text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-indigo-600;
+    }
+
+    .header-secondary{
+        @apply text-fuchsia-600;
+    }
+
+    .header-terciary{
+        @apply text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900 p-5 text-center mb-5;
+    }
+  }

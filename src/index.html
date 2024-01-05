@@ -5,23 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>PAC3 Eines HTML i CSS II</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+  <body class="antialiased bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
+    <header>
+      <include src="./views/navbar.html"></include>
+    </header>
+
+    <div class="w-full max-w-screen-xl mx-auto p-4 flex-1 justify-center items-center">
+      <div class="m-5 text-center">
+        <h2 class="header-primary">
+          19È TORNEIG BENÈFIC DE NADAL
+          <span class="header-secondary">CLUB DE TENIS MNK</span>
+        </h2>
+      </div>
+      <div class="flex flex-col">
+        <img src="./assets/images/clubtenismnkposter.svg" alt="poster">
+      </div>
+      <div class="flex flex-col w-full justify-center items-center">
+        <h2 class="header-primary mb-5">
+          POTS COMPRAR LA TEVA ENTRADA
+          <span class="header-secondary">A CONTINUACIÓ</span>
+        </h2>
+        <a href="./contact.html" class="btn-primary">RESERVA</a>
+      </div>
+     
     </div>
+    
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
+
